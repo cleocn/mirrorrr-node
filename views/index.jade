@@ -1,0 +1,13 @@
+extends layout
+
+block content
+	header
+		h1 mıɾɾoɾ - ɹoɹɹıɯ
+	section
+
+		div#form_wrapper
+			form(action="",method="GET",accept-charset="utf-8")
+			div#input_wrapper
+				span#http_prefix http://
+				input(type="text",name="url",placeholder="type url here...",id="url",value="baidu.com",autofocus)
+				input(id="go_button",type="submit",value="Go",onclick='window.open("/r/"+encodeURIComponent(document.getElementById("url").value))')
